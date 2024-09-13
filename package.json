@@ -1,18 +1,17 @@
 {
-  "name": "mesh-next-page-route",
+  "name": "test-new-meshjs-features",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "clean": "rm -rf .next package-lock.json node_modules"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@meshsdk/core": "^1.7.3",
-    "@meshsdk/react": "^1.7.3",
-    "next": "14.2.5",
+    "@meshsdk/core": "^1.7.5",
+    "@meshsdk/react": "^1.7.5",
+    "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -21,7 +20,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "14.2.11",
     "typescript": "^5"
   }
 }
