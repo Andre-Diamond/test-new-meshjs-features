@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Mesh App on Cardano</title>
+        <title>Testing new Meshjs features</title>
         <meta name="description" content="A Cardano dApp powered my Mesh" />
       </Head>
       <main>
