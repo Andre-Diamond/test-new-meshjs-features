@@ -11,7 +11,7 @@ export default function Home() {
       <main>
         <h1>
           <a href="https://meshjs.dev/">
-            Mesh
+            Mesh.js
           </a>{" "}
           Next.js
         </h1>
