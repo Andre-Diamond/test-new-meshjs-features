@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { MeshBadge } from "@meshsdk/react";
-import Nav from "../components/Nav";
 
 export default function Home() {
   return (
