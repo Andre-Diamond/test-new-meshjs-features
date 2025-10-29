@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { MeshBadge } from "@meshsdk/react";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
             Welcome to your Cardano dApp with dark mode enabled!
           </p>
           <div className={styles.badge}>
-            <MeshBadge />
           </div>
         </div>
       </main>

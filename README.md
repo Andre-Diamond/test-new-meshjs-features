@@ -34,3 +34,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Prisma + Supabase
+
+1. Create a `.env` file in the project root with your Supabase connection string (Project Settings → Database → Connection string → URI). Use the direct connection string and include `sslmode=require`:
+
+```bash
+DATABASE_URL="postgresql://<USER>:<PASSWORD>@<HOST>:5432/postgres?sslmode=require"
+# Optionally, for Prisma migrations' shadow db
+# SHADOW_DATABASE_URL="postgresql://<USER>:<PASSWORD>@<HOST>:5432/postgres?sslmode=require"
+```
+
+2. Generate the Prisma Client:
+
+```bash
+npm run prisma:generate
+```
+
+3. Introspect existing tables from Supabase (optional):
+
+```bash
+npm run prisma:pull
+```
+
+4. Open Prisma Studio (optional):
+
+```bash
+npm run prisma:studio
+```
+
+The Prisma Client is available via `src/lib/prisma.ts`.
