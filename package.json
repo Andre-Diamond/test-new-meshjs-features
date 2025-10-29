@@ -9,18 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@meshsdk/core": "^1.7.5",
-    "@meshsdk/react": "^1.7.5",
-    "next": "14.2.11",
+    "@meshsdk/core": "^1.9.0-beta.77",
+    "@meshsdk/core-csl": "^1.9.0-beta.77",
+    "@meshsdk/core-cst": "^1.9.0-beta.77",
+    "@meshsdk/react": "^1.9.0-beta.77",
+    "jsonld": "^8.3.3",
+    "jsonwebtoken": "^9.0.2",
+    "next": "^15.2.4",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/jsonld": "^1.5.15",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^20.14.10",
+    "@types/eslint": "^8.56.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.11",
-    "typescript": "^5"
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.4",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.3"
   }
 }

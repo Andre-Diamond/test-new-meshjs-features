@@ -1,21 +1,32 @@
 import Head from "next/head";
 import { MeshBadge } from "@meshsdk/react";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
-        <title>Mesh App on Cardano</title>
-        <meta name="description" content="A Cardano dApp powered by Mesh" />
+        <title>Mesh App on Cardano - Dark Mode</title>
+        <meta name="description" content="A Cardano dApp powered by Mesh with dark mode" />
       </Head>
-      <main>
-        <h1>
-          <a href="https://meshjs.dev/">Mesh</a> Next.js
-        </h1>
-        <p>Welcome to the Home page!</p>
+      <main className={styles.main}>
+        <div className={styles.hero}>
+          <h1 className={styles.title}>
+            <a href="https://meshjs.dev/" target="_blank" rel="noopener noreferrer">
+              Mesh
+            </a>{" "}
+            Next.js
+          </h1>
+          <p className={styles.description}>
+            Welcome to your Cardano dApp with dark mode enabled!
+          </p>
+          <div className={styles.badge}>
+            <MeshBadge />
+          </div>
+        </div>
       </main>
-      <footer>
-        <MeshBadge isDark={true} />
+      <footer className={styles.footer}>
+        <p>Powered by Mesh SDK</p>
       </footer>
     </div>
   );

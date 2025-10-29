@@ -1,7 +1,8 @@
 .nav {
-  background: #20272e;
-  padding: 0rem;
-  padding-left: 1rem;
+  background: #111111;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color, #333333);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .navList {
@@ -18,16 +19,18 @@
   gap: 1rem;
 }
 
-.li {
-  display: flex;
-}
-
-.a {
-  text-decoration: none;
-  color: #0070f3;
+.leftItems a {
+  color: var(--accent-color, #4a9eff);
   font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
-.a:hover {
-  text-decoration: underline;
+.leftItems a:hover {
+  background-color: rgba(74, 158, 255, 0.1);
+  color: var(--accent-hover, #3d85d6);
+  text-decoration: none;
 }
+
+/* removed unused .li selector */
